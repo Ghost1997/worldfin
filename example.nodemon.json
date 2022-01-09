@@ -1,0 +1,15 @@
+{
+  "env": {
+    "MONGO_URI": "mongodb+srv://worldfinddfdf_dev:admin@cluster0.ccrj9.mongodb.net/worldfin-dev",
+    "HOST": "https://worlddfdffinadvisors.in",
+    "SMTP_AUTH": "worldfinadvifdfdsors@gmail.com",
+    "SMTP_PASSWORD": "ssffsfs@2022",
+    "MAIL": "cajaisfsfmehta@gmail.com",
+    "FACEBOOK_PAGE": "https://www.facebook.com/dsds-sd-PVT-LTD-107106598324696",
+    "INSTA_PAGE": "https://www.instagram.com/sdad.advisors/",
+    "TWITTER_PAGE": "https://twitter.com/sfsfs",
+    "PORT": 8080,
+    "PAYMENT_PAGE": "https://rzp.sfsfs/l/nie7rQc",
+    "NEWS_API_URI": "https://newsapi.org/v2/top-headlines?country=in&apiKey=sfsfsfs&category=business"
+  }
+}

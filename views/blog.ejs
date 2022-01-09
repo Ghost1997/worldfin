@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      *{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mt-5{
+    margin-top: 5rem;
+}
+
+.our-blog{
+    background-color: #f8f9fa;
+    padding: 100px 0;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-center{
+    text-align: center;
+    font-size: 18px;
+}
+
+.text-center h2{
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+.text-center h2 span{
+    font-weight: 800;
+}
+
+.text-center p{
+    max-width: 500px;
+    margin: 0 auto;
+    color: #6c757d;
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+.col{
+    width: 33.3333333%;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.col .card{
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.col .card-body{
+    padding: 0 15px 15px 15px;
+    background-color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-body h5{
+    font-size: 24px;
+    margin: 7px 0;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.card p{
+    color: #6c757d;
+}
+
+.card-body .date-author span{
+    color: #e74c3c;
+}
+
+.card-body h5 a{
+    color: #222;
+}
+
+@media(min-width: 577px) and (max-width: 768px){
+    .col{
+        width: 50%;
+    }
+}
+
+@media(max-width: 576px){
+    .col{
+        width: 100%;
+    }
+}
+    </style>
+  </head>
+  <body>
+    
+      
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-dark
+          ftco_navbar
+          bg-dark
+          ftco-navbar-light
+        "
+        id="ftco-navbar"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="<%= process.env.HOST %>/"
+            >Worldfin Advisor PVT LTD</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#ftco-nav"
+            aria-controls="ftco-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="fa fa-bars"></span> Menu
+          </button>
+          <div class="collapse navbar-collapse" id="ftco-nav"> 
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a href="<%= process.env.HOST %>/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="<%= process.env.HOST %>/about" class="nav-link"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="<%= process.env.HOST %>/services" class="nav-link"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a href="blog.html" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item ">
+                <a href="<%= process.env.HOST %>/contact" class="nav-link"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="<%= process.env.PAYMENT_PAGE %>" class="nav-link"
+                  >Payment</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <section class="our-blog">
+      <div class="container">
+          <div class="text-center">
+              <h2>Our <span>Blog</span></h2>
+          </div>
+          <div class="row mt-5">
+                  <div class="col">
+                      <div class="card">
+                          <img src="https://images.unsplash.com/photo-1601971935068-fb9281b6deec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                          <div class="card-body">
+                              <h5 class="card-title">
+                                  <a href="#">Card Title</a>
+                              </h5>
+                              <p class="date-author">
+                                  11 March 2020 <span class="author">By Abbos</span>
+                              </p>
+                              <p class="card-text">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero eaque animi pariatur fugit excepturi, fuga delectus facere provident beatae.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col">
+                      <div class="card">
+                          <img src="https://images.unsplash.com/photo-1601971935068-fb9281b6deec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                          <div class="card-body">
+                              <h5 class="card-title">
+                                  <a href="#">Card Title</a>
+                              </h5>
+                              <p class="date-author">
+                                  11 March 2020 <span class="author">By Abbos</span>
+                              </p>
+                              <p class="card-text">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero eaque animi pariatur fugit excepturi, fuga delectus facere provident beatae.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col">
+                      <div class="card">
+                          <img src="https://images.unsplash.com/photo-1601971935068-fb9281b6deec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                          <div class="card-body">
+                              <h5 class="card-title">
+                                  <a href="#">Card Title</a>
+                              </h5>
+                              <p class="date-author">
+                                  11 March 2020 <span class="author">By Abbos</span>
+                              </p>
+                              <p class="card-text">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero eaque animi pariatur fugit excepturi, fuga delectus facere provident beatae.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="row mt-5">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1601971935068-fb9281b6deec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#">Card Title</a>
+                            </h5>
+                            <p class="date-author">
+                                11 March 2020 <span class="author">By Abbos</span>
+                            </p>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero eaque animi pariatur fugit excepturi, fuga delectus facere provident beatae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1601971935068-fb9281b6deec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#">Card Title</a>
+                            </h5>
+                            <p class="date-author">
+                                11 March 2020 <span class="author">By Abbos</span>
+                            </p>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero eaque animi pariatur fugit excepturi, fuga delectus facere provident beatae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1601971935068-fb9281b6deec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#">Card Title</a>
+                            </h5>
+                            <p class="date-author">
+                                11 March 2020 <span class="author">By Abbos</span>
+                            </p>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero eaque animi pariatur fugit excepturi, fuga delectus facere provident beatae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row mt-5">
+              <div class="col">
+                  <div class="card">
+                      <img src="https://images.unsplash.com/photo-1601971935068-fb9281b6deec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title">
+                              <a href="#">Card Title</a>
+                          </h5>
+                          <p class="date-author">
+                              11 March 2020 <span class="author">By Abbos</span>
+                          </p>
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero eaque animi pariatur fugit excepturi, fuga delectus facere provident beatae.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card">
+                      <img src="https://images.unsplash.com/photo-1601971935068-fb9281b6deec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title">
+                              <a href="#">Card Title</a>
+                          </h5>
+                          <p class="date-author">
+                              11 March 2020 <span class="author">By Abbos</span>
+                          </p>
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero eaque animi pariatur fugit excepturi, fuga delectus facere provident beatae.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col">
+                  <div class="card">
+                      <img src="https://images.unsplash.com/photo-1601971935068-fb9281b6deec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                      <div class="card-body">
+                          <h5 class="card-title">
+                              <a href="#">Card Title</a>
+                          </h5>
+                          <p class="date-author">
+                              11 March 2020 <span class="author">By Abbos</span>
+                          </p>
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero eaque animi pariatur fugit excepturi, fuga delectus facere provident beatae.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+          </div>
+          
+    </div>
+   
+</div>
+          
+  </body>
+</html>

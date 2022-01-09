@@ -1,0 +1,27 @@
+const express = require("express");
+const homeController = require("../controllers/home");
+const contactController = require("../controllers/contact");
+const serviceController = require("../controllers/services");
+const aboutController = require("../controllers/about");
+const feedbackController = require("../controllers/feedback");
+const blogController = require("../controllers/blog");
+const postController = require("../controllers/post");
+const adminController = require("../controllers/admin");
+const paymentController = require("../controllers/payment");
+const router = express.Router();
+
+router.get("/", homeController.home);
+router.get("/contact", contactController.contact);
+router.post("/contactUs", contactController.contactUs);
+router.post("/consultation", contactController.consultation);
+router.get("/services", serviceController.services);
+router.get("/about", aboutController.about);
+router.get("/feedback", feedbackController.feedback);
+router.post("/sendfeedback", feedbackController.postFeedback);
+router.get("/blog", blogController.blog);
+// router.get("/post", postController.getPostPage);
+router.post("/createPost", postController.createPost);
+router.get("/blogById", blogController.blogByID);
+router.get("/admin", adminController.admin);
+router.get("/payment", paymentController.payment);
+module.exports = router;

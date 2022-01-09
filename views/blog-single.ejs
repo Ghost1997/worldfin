@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="bg-wrap">
+              <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                  <p class="mb-0 phone pl-md-2">
+                    <a href="tel://+919582742231" class="mr-2"
+                      ><span class="fa fa-phone mr-1"></span> +91 9582742231</a
+                    >
+                    <a href="tel://+918459019681" class="mr-2"
+                      ><span class="fa fa-phone mr-1"></span> +91 8459019681</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-dark
+        ftco_navbar
+        bg-dark
+        ftco-navbar-light
+      "
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="<%= process.env.HOST %>/"
+          >Worldfin Advisor PVT LTD</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a href="<%= process.env.HOST %>/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="<%= process.env.HOST %>/about" class="nav-link"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="<%= process.env.HOST %>/services" class="nav-link"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a href="<%= process.env.HOST %>/blog" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="<%= process.env.HOST %>/contact" class="nav-link"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="<%= process.env.PAYMENT_PAGE %>" class="nav-link"
+                >Payment</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+    <section
+      class="hero-wrap hero-wrap-2"
+      style="background-image: url('images/bg_2.jpg')"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end">
+          <div class="col-md-9 ftco-animate pb-5">
+            <p class="breadcrumbs mb-2">
+              <span class="mr-2"
+                ><a href="<%= process.env.HOST %>/"
+                  >Home <i class="ion-ios-arrow-forward"></i></a
+              ></span>
+              <span class="mr-2"
+                ><a href="<%= process.env.HOST %>/blog"
+                  >Blog <i class="ion-ios-arrow-forward"></i></a
+              ></span>
+            </p>
+            <h1 class="mb-0 bread">Blog</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+            <p>
+              <img
+                src="<%= process.env.HOST +`/`+posts[0].image %>"
+                alt=""
+                class="img-fluid"
+              />
+            </p>
+            <h2 class="mb-3"><%= posts[0].title %></h2>
+            <p><%= posts[0].description %></p>
+
+            <div class="about-author d-flex p-4 bg-light">
+              <div class="bio mr-5"></div>
+              <div class="desc">
+                <h3>Warren Buffett</h3>
+                <p>
+                  “Rule No.1: Never lose money. Rule No.2: Never forget rule
+                  No.1.”
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .col-md-8 -->
+          <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">
+            <div class="sidebar-box"></div>
+            <div class="sidebar-box ftco-animate">
+              <div class="categories">
+                <h3>Services</h3>
+                <li>
+                  <a href="<%= process.env.HOST %>/services"
+                    >Accountancy <span class="fa fa-chevron-right"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= process.env.HOST %>/services"
+                    >Auditing <span class="fa fa-chevron-right"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= process.env.HOST %>/services"
+                    >Taxation <span class="fa fa-chevron-right"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= process.env.HOST %>/services"
+                    >Cost Accountancy <span class="fa fa-chevron-right"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= process.env.HOST %>/services"
+                    >Special Company Work
+                    <span class="fa fa-chevron-right"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= process.env.HOST %>/services"
+                    >Share Valuation Work<span
+                      class="fa fa-chevron-right"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= process.env.HOST %>/services"
+                    >Payroll Services <span class="fa fa-chevron-right"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="<%= process.env.HOST %>/services"
+                    >Financial and investment planning
+                    <span class="fa fa-chevron-right"></span
+                  ></a>
+                </li>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3>Recent Blog</h3>
+              <% for(var i = 1;i < posts.length;i++) { %>
+
+              <div class="block-21 mb-4 d-flex">
+                <img
+                  src="<%= process.env.HOST +`/`+posts[i].image %>"
+                  alt=""
+                  class="blog-img mr-4"
+                />
+                <div class="text">
+                  <h3 class="heading">
+                    <a
+                      href="<%= process.env.HOST +`/blogById?id=`+posts[i]._id %>"
+                      ><%= posts[i].title %></a
+                    >
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="#"
+                        ><span class="icon-calendar"></span> <%=
+                        posts[i].created_at.toLocaleDateString() %></a
+                      >
+                    </div>
+                    <div>
+                      <a href="#"
+                        ><span class="icon-person"></span> <%= posts[i].author
+                        %></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .section -->
+
+    <footer class="footer">
+      <div class="container-fluid px-lg-5">
+        <div class="row">
+          <div class="col-md-9 py-5">
+            <div class="row">
+              <div class="col-md-4 mb-md-0 mb-4">
+                <h2 class="footer-heading">About us</h2>
+                <p>
+                  Worldfin Advisor PVT LTD established in 10 March 2021 offers a
+                  full range of financial services including Business, Taxation,
+                  Auditing and Accounting Services. We can assist you with any
+                  of your business needs whether you are just starting out or
+                  operate a mature business
+                </p>
+                <ul class="ftco-footer-social p-0">
+                  <li class="ftco-animate">
+                    <a
+                      href="<%= process.env.TWITTER_PAGE %>"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Twitter"
+                      ><span class="fa fa-twitter"></span
+                    ></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a
+                      href="<%= process.env.FACEBOOK_PAGE %>"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Facebook"
+                      ><span class="fa fa-facebook"></span
+                    ></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a
+                      href="<%= process.env.INSTA_PAGE %>"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Instagram"
+                      ><span class="fa fa-instagram"></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <div class="row justify-content-center">
+                  <div class="col-md-12 col-lg-10">
+                    <div class="row">
+                      <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">Services</h2>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a class="py-1 d-block">Corporate Services</a>
+                          </li>
+                          <li>
+                            <a class="py-1 d-block">Audit Services</a>
+                          </li>
+                          <li>
+                            <a class="py-1 d-block">Taxation Services </a>
+                          </li>
+                          <li>
+                            <a class="py-1 d-block"
+                              >Corporate Finance Services</a
+                            >
+                          </li>
+                          <li>
+                            <a class="py-1 d-block"
+                              >Accounting Service & Payroll</a
+                            >
+                          </li>
+                          <li>
+                            <a class="py-1 d-block">Other Services</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">Contact</h2>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a class="py-1 d-block" href="tel://+919582742231"
+                              >+91 9582742231</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="py-1 d-block"
+                              href="mailto:cajaimehta@gmail.com"
+                              >cajaimehta@gmail.com</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-md-5">
+              <div class="col-md-12">
+                <p class="copyright">
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved | Worldfin Advisor Private Limited
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
+            <h2 class="footer-heading">Free consultation</h2>
+            <form
+              action="/consultation"
+              method="POST"
+              class="form-consultation"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  name="email"
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  name="phone"
+                  type="number"
+                  class="form-control"
+                  placeholder="Phone"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="3"
+                  class="form-control"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="form-control submit px-3">
+                  Send A Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

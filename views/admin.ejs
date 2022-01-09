@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script lang="javascript">
+      
+    </script>
+    <style>
+
+      body {
+        background: #f5f5f5;
+        padding: 0;
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+
+      i.fa {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.428571429;
+      }
+      #parent {
+        text-align: center;
+        height: 400px;
+        width: 600px;
+      }
+      .block {
+        height: 100px;
+        width: 200px;
+        text-align: left;
+      }
+      .center {
+        margin: auto;
+        background-color: green;
+      }
+      .left {
+        margin: auto auto auto 0;
+        background-color: red;
+      }
+      .right {
+        margin: auto 0 auto auto;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Content -->
+    <div class="main"  ></div>
+      <div class="hipsum" style="width:800px; margin:0 auto;" id="parent">
+        <div class="jumbotron">
+          <h1 id="hello,-world!">
+            Hello, Admin!<a class="anchorjs-link" href="#"
+              ><span class="anchorjs-icon"></span
+            ></a>
+          </h1>
+          <p>This is Your Command Center</p>
+          <p>
+            <!-- <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='<%= process.env.HOST %>/news';">
+              Add News
+            </button> -->
+            <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='<%= process.env.HOST %>/post';">
+              Post Article
+            </button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='<%= process.env.HOST %>/feedback';">
+              Feedbacks
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
