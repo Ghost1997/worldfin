@@ -19,7 +19,7 @@ router.get("/about", aboutController.about);
 router.get("/feedback", feedbackController.feedback);
 router.post("/sendfeedback", feedbackController.postFeedback);
 router.get("/blog", blogController.blog);
-// router.get("/post", postController.getPostPage);
+router.get("/post", postController.getPostPage);
 router.post("/createPost", postController.createPost);
 router.get("/blogById", blogController.blogByID);
 router.get("/admin", adminController.admin);
