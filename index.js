@@ -43,7 +43,7 @@ app.use(notFound.get404);
 
 const healthCheckUrl = process.env.HEALTH_CHECK_URL; // Update with your actual URL
 // Schedule a cron job to run every 10 minutes
-cron.schedule("*/1 * * * *", async () => {
+cron.schedule("*/10 * * * *", async () => {
   try {
     const response = await axios.get(healthCheckUrl);
     if (response.data.status === "OK") {
