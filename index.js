@@ -5,6 +5,8 @@ const mongoose = require("mongoose");
 const routes = require("./routes/router");
 const notFound = require("./controllers/404");
 var multer = require("multer");
+const cron = require("node-cron");
+const axios = require("axios");
 
 app.use(express.json());
 app.use(
@@ -27,24 +29,32 @@ const fileStorage = multer.diskStorage({
 });
 
 const fileFilter = (req, file, cb) => {
-  if (
-    file.mimetype === "image/png" ||
-    file.mimetype === "image/jpg" ||
-    file.mimetype === "image/jpeg"
-  ) {
+  if (file.mimetype === "image/png" || file.mimetype === "image/jpg" || file.mimetype === "image/jpeg") {
     cb(null, true);
   } else {
     cb(null, false);
   }
 };
 
-app.use(
-  multer({ storage: fileStorage, fileFilter: fileFilter }).single("image")
-);
+app.use(multer({ storage: fileStorage, fileFilter: fileFilter }).single("image"));
 app.use("/images", express.static(path.join(__dirname, "images")));
 app.use("/", routes);
 app.use(notFound.get404);
 
+const healthCheckUrl = process.env.HEALTH_CHECK_URL; // Update with your actual URL
+// Schedule a cron job to run every 10 minutes
+cron.schedule("*/1 * * * *", async () => {
+  try {
+    const response = await axios.get(healthCheckUrl);
+    if (response.data.status === "OK") {
+      console.log("Health check passed:", new Date());
+    } else {
+      console.error("Health check failed:", new Date());
+    }
+  } catch (error) {
+    console.error("Error calling health check API:", error.message);
+  }
+});
 mongoose
   .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,

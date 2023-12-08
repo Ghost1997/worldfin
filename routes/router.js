@@ -24,4 +24,5 @@ router.post("/createPost", postController.createPost);
 router.get("/blogById", blogController.blogByID);
 router.get("/admin", adminController.admin);
 router.get("/payment", paymentController.payment);
+router.get("/health", (req, res) => res.json({ status: "OK" }));
 module.exports = router;
