@@ -7,14 +7,9 @@ exports.home = async (req, res, next) => {
     .find()
     .sort([["created_at", -1]])
     .limit(6);
-  const {
-    data: { articles },
-  } = await axios.get(process.env.NEWS_API_URI);
 
   res.render("index", {
     pageTitle: "Home",
     message: null,
-    feed: feedback,
-    news: articles,
   });
 };
